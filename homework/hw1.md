@@ -21,3 +21,4 @@ It cannot be considered a group as:
    For the polynomial x^3 - x^2 + 4x - 12
    Find a the positive root ? **2**
    What is the degree of this polynomial ? **3**
+  

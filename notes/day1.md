@@ -55,7 +55,12 @@
 - Polynomial
   - Schwartz Zippel Lemma
 - Proving systems
+    - Inputs
+        - Instance variables: Public
+        - Witness variables: Private
   - Could be stark or snark based
   - What do we require of a proof
     - Completeness: if prover & verifier are honest the system would work
     - Soundness: a dishonest prover cannot come up with a proof which could be verified
+    - Succinctness: the proof should be short
+    - Zero knowledge: the verifier should not learn anything about the prover's input
