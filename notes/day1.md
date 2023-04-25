@@ -1,0 +1,61 @@
+- Maths
+  - Z is used to denote integers {.. -3, -2, -1, 0, 1, 2, 3...}
+  - Q is used to denote rational number
+  - R is used to denote real numbers
+  - Group Theory
+    - Set of elements with a binary operation(•) satisfying certain properties
+      - Closure: for all the binary operations the result of it is included in the set. a•b ∈ S
+      - Associativity: a•(b•c) = (a•b)•c
+      - Identity element _e_ exists such that a•e = a
+      - Inverse element _x_ exists in the set such that a•x = e
+        - Subgroup
+          - A subset of the elements of a group satisfies the group properties then that is a subset of the original group
+        - Cyclic group
+          - Could be a finite group
+          - Applying the group operation with the generator will give all the elements of the group in a cyclic manner
+          - The order of the group is the number of elements in the group
+        - Finding an inverse
+          - Fermat's little theorem
+            - a^-1 ≡ a^(p-2) mod p
+            - Eg: p=7, a=2
+              - 2^(7-2) mod 7 = 4
+        - Equivalence classes
+          - When 2 numbers have the same remainder when divided by a number then they are in the same equivalence class
+    - Fields
+      - A field is a set of numbers together with 2 operations called addition and multiplication which satisfy certain properties
+        - Associativity of addition and multiplication: (a + b) + c = a + (b + c) and (a _ b) _ c = a _ (b _ c)
+        - Commutativity of addition and multiplication: a + b = b + a and a _ b = b _ a
+        - Identity element for addition and multiplication: a + 0 = a and a \* 1 = a
+        - Inverse element for addition and multiplication: a + (-a) = 0 and a \* a^-1 = 1
+        - Distributivity of multiplication over addition: a*(b+c) = a*b + a\*c
+      - Finite fields
+        - A field with a finite set of elements: set of integers modulo a prime number
+        - The order of the field is the number of elements in the field
+          - For a finite field the order must be
+            - a prime number (a prime field) or
+            - a power of a prime number (an extension field)
+      - Generator
+        - Every field has a generator
+        - By exponentiating the generator we can get all the elements of the field
+      - Useful links
+        - https://asecuritysite.com/encryption/finite
+        - http://coders-errand.com/zk-snarks-and-their-algebraic-structure/
+- Cryptography
+  - Hash functions
+    - takes input and gives fixed size output
+    - even a change in a bit of the input will give a totally different output
+    - same input will give same output
+    - easy to go from input to output but no way to get from output to input (non trivial)
+  - Encryption
+    - Symmetric encryption
+      - 1 key
+    - Asymmetric encryption
+      - 2 keys
+  - Elliptic curve - Montgomery Curves - Edwards Curves
+- Polynomial
+  - Schwartz Zippel Lemma
+- Proving systems
+  - Could be stark or snark based
+  - What do we require of a proof
+    - Completeness: if prover & verifier are honest the system would work
+    - Soundness: a dishonest prover cannot come up with a proof which could be verified
